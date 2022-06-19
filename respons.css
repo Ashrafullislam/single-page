@@ -1,0 +1,243 @@
+* 
+/* Navbar Start here*/
+{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+  list-style-type: none;
+  text-decoration: none;
+}
+
+body{
+    font-family: montserrat;
+
+}
+nav{
+    background: rgb(67, 27, 228);
+    height: 80px;
+    width: 100%;
+}
+label.Logo{
+    
+    color:white;
+    font-size: 34px;
+    line-height: 80px;
+    padding: 0 100px;
+    
+}
+nav ul{
+    float: right;
+    margin-right: 20px;
+
+
+}
+nav ul li{
+    display: inline-block;
+     line-height: 80px;
+     margin:0 10px;
+}
+nav ul li a{
+    color:#fff;
+    font-size: 17px;
+    padding:8px 13px;
+    border-radius: 4px;
+    text-transform: uppercase;
+
+
+}
+a.active,a:hover{
+    background: rgb(13, 4, 139);
+    transform: 0.4s;
+}
+.checkbtn{
+    font-size: 30px;
+    color:white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+.checkbtn:hover{
+    color:#210306;
+}
+
+#check{
+    display:none;
+}
+
+
+.banner-1{
+    display: block;
+}
+
+@media (max-width: 952px ){
+    label.Logo{
+        font-size: 30px;
+        padding-left:50px ;
+    }
+}
+ /* Its for mobile device toggleable navbar */
+@media (max-width: 858px ){
+    .checkbtn{
+        display: block;
+
+    }
+    ul{
+        position: fixed;
+        width: 60%;
+        height: 60vh;
+        background: rgb(1, 1, 47);
+        top:80px;
+        left: 0;
+        text-align: center;
+        left: -100%; /* Its for hide and show with click*/
+        transition: all .6s;
+    }
+    nav ul li{
+        display: block;
+        margin:50px 0;
+        line-height: 30px;
+    }
+    nav ul li a{
+        font-size: 20px;
+        background: none;
+        color:rgb(205, 206, 249)
+    }
+    a:hover,a.active{
+        background: none;
+        color:#0082e6;
+
+    }
+    #check:checked ~ ul{
+        left: 0;
+    }
+}
+ /* Home page banner-1 start here */
+@media (max-width:1319px ){
+    img.background-img {
+        background-position: center;
+        margin: 0 auto;
+        display: block;
+        background-size: cover;
+        width: 100%;
+        height: 80vh;
+    }
+    .homepage-title {
+        position: absolute;
+        align-items: center;
+        left: 38%;
+        width: 400px;
+        height: 150px;
+        background-color: #10034c;
+        color: white;
+        top: 50%;
+        padding: 35px 10px;
+    }
+    
+
+}
+@media (max-width:1400px ){
+    img.background-img {
+        background-position: center;
+        margin: 0 auto;
+        display: block;
+        background-size: cover;
+        width: 100%;
+        height: 80vh;
+    }
+    .homepage-title {
+        position: absolute;
+        align-items: center;
+        left: 38%;
+        width: 400px;
+        height: 150px;
+        background-color: #10034c;
+        color: white;
+        top: 50%;
+        padding: 35px 10px;
+    }
+    
+
+}
+@media(max-width:992px){
+    .homepage-title {
+        width: 300px;
+        height: 131px;
+        padding: 13px 10px;
+        left: 34%;
+    }
+    h2.banner-1.title {
+        padding: 11px 26px;
+    }
+}
+@media (max-width:850px){
+    .homepage-title {
+        width: 300px;
+        height: 131px;
+        padding: 13px 10px;
+        left: 34%;
+    }
+    h2.banner-1.title {
+        padding: 11px 26px;
+    }
+    ul {
+        position: fixed;
+        overflow: hidden;
+        z-index: 1;
+    }
+}
+
+@media (max-width:768px ){
+    img.background-img {
+        background-position: center;
+        margin: 0 auto;
+        display: block;
+        background-size: cover;
+        width: 100%;
+        height: 79vh;
+        
+    }
+    .homepage-title {
+        position: absolute;
+        width: 300px;
+        height: 120px;
+        left: 30%;
+        padding: 10px 32px;
+    }
+    h2.banner-1.title {
+        font-size: 29px;
+    }
+    ul {
+        position: fixed;
+        overflow: hidden;
+        z-index: 1;
+    }
+}
+
+    
+    @media(max-width:576px ){
+            h2.banner-1.title {
+                font-size: 21px;
+            }
+        
+        .homepage-title {
+            left: 27%;
+            width: 252px;
+            height: 92px;
+        }
+        ul {
+            position: fixed;
+            overflow: hidden;
+            z-index: 1;
+        }
+    }
+
+
+ /* Home page banner-1 end here */
+   
+
+/* Navbar End  here*/
+
+
+ /* progress bar animation section start here */
